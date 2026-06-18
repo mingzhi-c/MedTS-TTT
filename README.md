@@ -7,6 +7,9 @@ MedTS-TTT is a test-time training framework for medical time series. It targets
 subject-level distribution shift in cross-subject evaluation, where samples from
 the same subject should not appear in both training and test splits.
 
+**Keywords:** medical time series, test-time training, EEG/ECG classification,
+subject-independent evaluation.
+
 <p align="center">
   <img src="assets/model.png" alt="MedTS-TTT overview" width="88%">
 </p>
