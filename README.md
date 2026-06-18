@@ -7,7 +7,9 @@ MedTS-TTT is a test-time training framework for medical time series. It targets
 subject-level distribution shift in cross-subject evaluation, where samples from
 the same subject should not appear in both training and test splits.
 
-![MedTS-TTT overview](assets/model.png)
+<p align="center">
+  <img src="assets/model.png" alt="MedTS-TTT overview" width="88%">
+</p>
 
 ## Highlights
 
@@ -80,12 +82,23 @@ Recommended benchmark references:
 The paper evaluates on four public clinical datasets under subject-independent
 splits, following the processed data and evaluation protocol of Medformer:
 
-| Modality | Dataset | Task |
-| --- | --- | --- |
-| EEG | APAVA | Alzheimer's disease detection |
-| EEG | ADFTD | HC / FTD / AD classification |
-| ECG | PTB | myocardial infarction detection |
-| ECG | PTB-XL | cardiac condition classification |
+<div align="center">
+<table>
+  <thead>
+    <tr>
+      <th>Modality</th>
+      <th>Dataset</th>
+      <th>Task</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td align="center">EEG</td><td align="center">APAVA</td><td>Alzheimer's disease detection</td></tr>
+    <tr><td align="center">EEG</td><td align="center">ADFTD</td><td>HC / FTD / AD classification</td></tr>
+    <tr><td align="center">ECG</td><td align="center">PTB</td><td>myocardial infarction detection</td></tr>
+    <tr><td align="center">ECG</td><td align="center">PTB-XL</td><td>cardiac condition classification</td></tr>
+  </tbody>
+</table>
+</div>
 
 Processed data should follow the benchmark structure:
 
@@ -102,24 +115,48 @@ dataset/DATA_NAME/
 Under subject-independent evaluation, MedTS-TTT achieves 11 top-1 rankings out
 of 12 evaluations across 4 datasets, 9 baselines, and 3 metrics.
 
-| Metric | Average Result |
-| --- | ---: |
-| Accuracy | 75.18 |
-| Macro-F1 | 70.20 |
-| Macro-AUROC | 86.86 |
+<div align="center">
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Average Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td align="center">Accuracy</td><td align="right">75.18</td></tr>
+    <tr><td align="center">Macro-F1</td><td align="right">70.20</td></tr>
+    <tr><td align="center">Macro-AUROC</td><td align="right">86.86</td></tr>
+  </tbody>
+</table>
+</div>
 
 Dataset-level results for MedTS-TTT:
 
-| Dataset | Accuracy | Macro-F1 | Macro-AUROC |
-| --- | ---: | ---: | ---: |
-| APAVA | 83.03 | 81.52 | 89.96 |
-| ADFTD | 58.10 | 55.18 | 75.41 |
-| PTB | 85.04 | 80.71 | 91.31 |
-| PTB-XL | 74.56 | 63.39 | 90.77 |
+<div align="center">
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Accuracy</th>
+      <th>Macro-F1</th>
+      <th>Macro-AUROC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td align="center">APAVA</td><td align="right">83.03</td><td align="right">81.52</td><td align="right">89.96</td></tr>
+    <tr><td align="center">ADFTD</td><td align="right">58.10</td><td align="right">55.18</td><td align="right">75.41</td></tr>
+    <tr><td align="center">PTB</td><td align="right">85.04</td><td align="right">80.71</td><td align="right">91.31</td></tr>
+    <tr><td align="center">PTB-XL</td><td align="right">74.56</td><td align="right">63.39</td><td align="right">90.77</td></tr>
+  </tbody>
+</table>
+</div>
 
 ## Test-Time Alignment
 
-![Feature alignment under test-time training](assets/ttt_alignment.png)
+<p align="center">
+  <img src="assets/ttt_alignment.png" alt="Feature alignment under test-time training" width="88%">
+</p>
 
 CLSA-TTT narrows the train-test feature gap under subject-level distribution
 shift while preserving class discriminability.
