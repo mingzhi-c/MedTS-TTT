@@ -168,6 +168,7 @@ Citation information will be updated after the paper metadata is finalized.
 ## Acknowledgement
 
 This project follows the medical time-series benchmark protocol and processed
-data format introduced by Medformer and MedTS_Evaluation. We thank the authors
-for establishing a useful evaluation ecosystem for subject-independent medical
-time-series classification.
+data format introduced by [Medformer](https://github.com/DL4mHealth/Medformer)
+and [MedTS_Evaluation](https://github.com/DL4mHealth/MedTS_Evaluation). We thank
+the authors for establishing a useful evaluation ecosystem for subject-independent
+medical time-series classification.
