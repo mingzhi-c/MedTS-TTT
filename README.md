@@ -163,7 +163,16 @@ shift while preserving class discriminability.
 
 ## Citation
 
-Citation information will be updated after the paper metadata is finalized.
+```bibtex
+@inproceedings{chen2026medts,
+  title={MedTS-TTT: Test-Time Training for Medical Time Series Classification},
+  author={Chen, Mingzhi and Gui, Yiyu and Luo, Guibo},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={348--358},
+  year={2026},
+  organization={Springer}
+}
+```
 
 ## Acknowledgement
 
